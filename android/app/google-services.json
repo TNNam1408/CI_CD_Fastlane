@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "481596373105",
+    "project_id": "ci-cd-fastlane-flutter",
+    "storage_bucket": "ci-cd-fastlane-flutter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:481596373105:android:4ec902a17ea43c1118c3d0",
+        "android_client_info": {
+          "package_name": "com.namtn.ci_cd_fastlane"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVHOhVE9tkP7DRNeTbvW91vWhAfGQkupA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

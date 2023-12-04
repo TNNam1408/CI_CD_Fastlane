@@ -44,12 +44,19 @@ platform :android do
         build_type: 'Release'
     )
     lane :android_release do
+        sh("flutter build apk")
+
         firebase_app_distribution(
             app: "1:481596373105:android:4ec902a17ea43c1118c3d0",
             testers: "tnnam1408@gmail.com",
             release_notes: "CI-CD android app with firebase_app_distribution in flutter",
             firebase_cli_path: "/usr/local/bin/firebase",
-            apk_path: "../build/app/outputs/apk/release/app-release.apk"
+            apk_path: "../build/app/outputs/flutter-apk/app-release.apk"
+        )
+
+        slack(
+              message: "New version deployed! Download it here: #{lane_context[SharedValues::FIREBASE_APP_DISTRO_RELEASE]}",
+              slack_url: "https://hooks.slack.com/services/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",
         )
     end
 end
